@@ -24,6 +24,10 @@ header h1 {
   font-weight: 700;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
 nav a {
   text-decoration: none;
   color: #232323;
@@ -33,6 +37,32 @@ nav a {
 }
 nav a:hover {
   color: #44a1fe;
+}
+.cart-btn {
+  margin-left: 2rem;
+  background: #44a1fe;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.cart-btn:hover {
+  background: #2377c7;
+}
+#cartCount {
+  background: #fff;
+  color: #44a1fe;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .container {
@@ -189,4 +219,80 @@ footer small {
   color: #cfd8dc;
   display: block;
   margin-top: 0.2rem;
+}
+
+/* Cart modal styles */
+.cart-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.3);
+}
+.cart-modal-content {
+  background: #fff;
+  margin: 6vh auto;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 95%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(44,161,254,0.13);
+}
+.cart-modal-content h2 {
+  color: #44a1fe;
+  margin-top: 0;
+}
+.close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2377c7;
+  cursor: pointer;
+}
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+#cartItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f0f4f8;
+}
+.removeItem {
+  color: #d32f2f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+#cartTotal {
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#checkoutBtn {
+  background: #44a1fe;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+#checkoutBtn:hover {
+  background: #2377c7;
 }

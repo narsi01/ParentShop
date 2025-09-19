@@ -22,6 +22,9 @@
         <a href="#products" id="navProducts">Shop</a>
         <a href="#about" id="navAbout">About Us</a>
         <a href="#newsletter" id="navNewsletter">Newsletter</a>
+        <button id="cartBtn" class="cart-btn">
+          🛒 Cart <span id="cartCount">0</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -41,29 +44,29 @@
     <div class="container">
       <h2>Featured Products</h2>
       <div class="products-grid">
-        <div class="product-card" data-product="ParentShop Baby Carrier">
-          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Baby Carrier">
+        <div class="product-card" data-product="ParentShop Baby Carrier" data-price="79.99">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Baby Carrier">
           <h3>ParentShop Baby Carrier</h3>
           <p>Ergonomic, comfortable, and stylish – perfect for parents on the go.</p>
           <span class="price">$79.99</span>
           <button class="addToCartBtn">Add to Cart</button>
         </div>
-        <div class="product-card" data-product="Organic Swaddle Set">
-          <img src="https://images.unsplash.com/photo-1519864600555-1c7a5c7a8b8e?auto=format&fit=crop&w=400&q=80" alt="Swaddle Set">
+        <div class="product-card" data-product="Organic Swaddle Set" data-price="29.99">
+          <img src="https://images.unsplash.com/photo-1519864600555-1c7a5c7a8b8e?auto=format&fit=crop&w=400&q=80" alt="Organic Swaddle Set">
           <h3>Organic Swaddle Set</h3>
           <p>Super-soft, breathable, and safe for sensitive skin.</p>
           <span class="price">$29.99</span>
           <button class="addToCartBtn">Add to Cart</button>
         </div>
-        <div class="product-card" data-product="ParentShop Sleep Trainer">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sleep Trainer">
+        <div class="product-card" data-product="ParentShop Sleep Trainer" data-price="59.99">
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" alt="Sleep Trainer">
           <h3>ParentShop Sleep Trainer</h3>
           <p>Smart, gentle guidance for healthy sleep routines.</p>
           <span class="price">$59.99</span>
           <button class="addToCartBtn">Add to Cart</button>
         </div>
-        <div class="product-card" data-product="ParentShop Diaper Bag">
-          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Diaper Bag">
+        <div class="product-card" data-product="ParentShop Diaper Bag" data-price="49.99">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Diaper Bag">
           <h3>ParentShop Diaper Bag</h3>
           <p>Functional, roomy, and stylish – built for parent adventures.</p>
           <span class="price">$49.99</span>
@@ -102,6 +105,17 @@
       <small>Founded by Ida Tarbell, inspired by Growing Family.</small>
     </div>
   </footer>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span id="closeCartModal" class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <div id="cartTotal"></div>
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
