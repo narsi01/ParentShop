@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ParentShop – The Essential Store for New Parents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ParentShop – The Essential Store for New Parents. From the trusted Growing Family blog, ParentShop brings parents curated products and advice.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Segment Analytics.js snippet -->
+  <script>
+    !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="kCp7oSFDjUYHhyt0I3WBgztmfYZ72M4S";;analytics.SNIPPET_VERSION="5.2.0";
+    analytics.load("kCp7oSFDjUYHhyt0I3WBgztmfYZ72M4S");
+    analytics.page();
+    }}();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ParentShop</h1>
+      <nav>
+        <a href="#products" id="navProducts">Shop</a>
+        <a href="#about" id="navAbout">About Us</a>
+        <a href="#newsletter" id="navNewsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to ParentShop</h2>
+      <p>
+        Your trusted source for parenthood essentials, curated by the team behind the Growing Family blog.
+        Discover our story-driven content and shop products designed for new parents.
+      </p>
+      <button id="shopNowBtn">Shop Now</button>
+    </div>
+  </section>
+
+  <section id="products" class="products-section">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="products-grid">
+        <div class="product-card" data-product="ParentShop Baby Carrier">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Baby Carrier">
+          <h3>ParentShop Baby Carrier</h3>
+          <p>Ergonomic, comfortable, and stylish – perfect for parents on the go.</p>
+          <span class="price">$79.99</span>
+          <button class="addToCartBtn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product="Organic Swaddle Set">
+          <img src="https://images.unsplash.com/photo-1519864600555-1c7a5c7a8b8e?auto=format&fit=crop&w=400&q=80" alt="Swaddle Set">
+          <h3>Organic Swaddle Set</h3>
+          <p>Super-soft, breathable, and safe for sensitive skin.</p>
+          <span class="price">$29.99</span>
+          <button class="addToCartBtn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product="ParentShop Sleep Trainer">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sleep Trainer">
+          <h3>ParentShop Sleep Trainer</h3>
+          <p>Smart, gentle guidance for healthy sleep routines.</p>
+          <span class="price">$59.99</span>
+          <button class="addToCartBtn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product="ParentShop Diaper Bag">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Diaper Bag">
+          <h3>ParentShop Diaper Bag</h3>
+          <p>Functional, roomy, and stylish – built for parent adventures.</p>
+          <span class="price">$49.99</span>
+          <button class="addToCartBtn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>
+        ParentShop started as Growing Family, a blog dedicated to sharing authentic parenthood journeys. Founded by Ida Tarbell, our community grew by listening to and learning from parents worldwide. ParentShop continues this tradition, offering not just products but a platform for daily conversation and innovation.
+      </p>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter-section">
+    <div class="container">
+      <h2>Stay Connected</h2>
+      <p>Join the ParentShop newsletter for exclusive tips, stories, and product launches.</p>
+      <form id="newsletterForm">
+        <input type="email" name="email" id="emailInput" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="newsletterSuccess" style="display:none;color:green;margin-top:10px;">
+        Thank you for subscribing!
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 ParentShop. All rights reserved.</p>
+      <small>Founded by Ida Tarbell, inspired by Growing Family.</small>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
